@@ -10,6 +10,10 @@ h1{
 	color: white;
 }
 
+#text{
+	margin-left: 10%;
+}
+
 a{
 	color: blue;
 }
