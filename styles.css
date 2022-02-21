@@ -1,12 +1,16 @@
 body{
-	background-color : black ;
+	background-image: url(https://github.com/stojan2/fotos/blob/main/hintergrundgaming.jpg?raw=true);
+	background-position-x: left;
+	background-position-y: top;
 	color : white;
 	width: 80%;
+	background-repeat: repeat-y;
+	background-size: 100% 100%;
 	margin-left: 10%;
 }
 
+
 h1{
-	background-color: black;
 	color: white;
 }
 
