@@ -1,6 +1,40 @@
 body{
+    background-position-x: left;
+    background-position-y: top;
+    text-align: center;
     color: white;
     background-color: black;
+    background-image: url('bilder/seitehintergrund.png');
     margin-left: 20%;
     margin-right: 20%;
+    width: 60vw;
+    height: 60vh;
+    background-repeat: repeat-y;
+	background-size: 100vw 100vw;
+}
+
+h1{
+ font-size: 5vw;
+}
+
+h2{
+    font-size: 2vw;
+}
+
+
+#names{
+    color: red;
+}
+#windowsDownloadButton{
+    transform: scaleX(250%);
+}
+#windowsDownloadText{
+    margin-top: -5vw;
+    font-size: 3vw;
+    transform: scaleX(100%);
+}
+
+#discord{
+    margin-bottom: -1vw;
+
 }
