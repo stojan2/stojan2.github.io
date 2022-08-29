@@ -1,4 +1,4 @@
-function start(){
+function check(){
     var userAgent = navigator.userAgent.toLowerCase();
     if(userAgent.match('iphone'))
       noHave();
@@ -14,8 +14,7 @@ function start(){
 
 
 function android() {
-    document.getElementById('pc').innerHTML = "<img width=100% src=https://github.com/stojan2/fotos/blob/main/decision1.png?raw=true alt=bild>";
-    document.getElementById('pc').innerHTML = "<img width=100% src=https://github.com/stojan2/fotos/blob/main/decision3.png?raw=true alt=bild ></img>";
+    document.getElementById('pc').innerHTML = "";
     document.getElementById('noHave').innerHTML = "";
 }
 
