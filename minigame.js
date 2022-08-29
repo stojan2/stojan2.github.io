@@ -73,6 +73,7 @@ function start(){
     playingB=1;
     bombSpeed=1;
     birdAn=false;
+    timeSpeed=0.5;
 }
 
 document.addEventListener("keydown", direction);
@@ -128,6 +129,7 @@ function death(){
     gameDraw.fillStyle = "red";
     gameDraw.textAlign = "center";
     gameDraw.fillText("you death press Enter to restart", canvas.width/2, canvas.height/2);
+    gameDraw.fillText("and you score"+youscore, canvas.width/2, canvas.height/2+100);
 }
 
 
@@ -176,7 +178,8 @@ function playing(){
     gameDraw.font = "5vh Arial";
     gameDraw.fillStyle = "red";
     gameDraw.fillText(hp+" Live", 100, 40);
-    gameDraw.fillText(parseInt(bombSpeed*100)-100+" score", 100, 100);
+    gameDraw.fillText(parseInt(bombSpeed*100)-100+" score", 200, 100);
+    youscore=parseInt(bombSpeed*100)-100;
 }
 
 function spawnBomb(){
@@ -193,6 +196,8 @@ function spawnHeart(){
         console.log("heart");
     }
 }
+
+var youscore;
 
 function heartUpdate(){
     for(i=0; i<heartx.length; i++){
