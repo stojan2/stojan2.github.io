@@ -25,7 +25,7 @@ var xg,yg;
 let gameUpdate = setInterval(update,10);
 let spawningBomb = setInterval(spawnBomb,1000);
 let speedingBomb = setInterval(speedingBombUp, 100);
-let spawningHeart = setInterval(spawnHeart, 10000);
+let spawningHeart = setInterval(spawnHeart, 9900);
 
 function speedingBombUp(){
     bombSpeed+=0.01;
@@ -43,7 +43,7 @@ var spawnTime;
 
 var birdAn;
 
-var bombsx=[],bombsy=[],bombsgx,bombsgy;
+var bombsx=[],bombsy=[],bombss=[],bombsgx,bombsgy;
 
 var heartx=[],hearty=[],heartgx,heartgy;
 
@@ -64,12 +64,14 @@ function start(){
     heartgy=100;
     bombsx=null;
     bombsy=null;
+    bombss=null;
     heartx=null;
     hearty=null;
     heartx=[];
     hearty=[];
     bombsx=[];
     bombsy=[];
+    bombss=[];
     playingB=1;
     bombSpeed=1;
     birdAn=false;
@@ -117,7 +119,7 @@ function test(event){
 }
 
 function update() {
-    document.getElementById("myAudio").play();
+    //document.getElementById("myAudio").play();
     gameDraw.drawImage(hintegrundBild,0,0,1980,1080);
 
     if(playingB==1)playing();
@@ -183,10 +185,42 @@ function playing(){
 }
 
 function spawnBomb(){
-    for(i=0; i<bombSpeed; i++){
-        bombsx[bombsx.length]=Math.random() * (1980-bombsgx);
-        bombsy[bombsx.length]=-bombsgy;
-        console.log("spawn");
+    if(bombSpeed<11){
+        for(i=0; i<bombSpeed/2; i++){
+            bombss[bombss.length]=0;
+            bombsx[bombsx.length]=Math.random() * (1980-bombsgx);
+            bombsy[bombsy.length]=-bombsgy;
+            console.log("spawn");
+        }
+    }
+    else if(bombSpeed<21){
+        for(i=0; i<6; i++){
+            bombss[bombss.length]=0;
+            bombsx[bombsx.length]=Math.random() * (1980-bombsgx);
+            bombsy[bombsy.length]=-bombsgy;
+            console.log("spawn");
+        }
+        for(i=0; i<(bombSpeed-10)/2; i++){
+            bombss[bombss.length]=1;
+            bombsy[bombsy.length]=Math.random() * (1080-bombsgy);
+            bombsx[bombsx.length]=-bombsgx;
+            console.log("spawn");
+        }
+    }
+    else {
+        bombSpeed=22;
+        for(i=0; i<7; i++){
+            bombss[bombss.length]=0;
+            bombsx[bombsx.length]=Math.random() * (1980-bombsgx);
+            bombsy[bombsy.length]=-bombsgy;
+            console.log("spawn");
+        }
+        for(i=0; i<10/2; i++){
+            bombss[bombss.length]=1;
+            bombsy[bombsy.length]=Math.random() * (1080-bombsgy);
+            bombsx[bombsx.length]=-bombsgx;
+            console.log("spawn");
+        }
     }
 }
 function spawnHeart(){
@@ -216,7 +250,8 @@ function heartUpdate(){
 
 function bombsUpdate(){
     for(i=0; i<bombsx.length; i++){
-        bombsy[i]+=bombSpeed;
+        if(bombss[i]==0)bombsy[i]+=bombSpeed;
+        else bombsx[i]+=bombSpeed;
         gameDraw.drawImage(bomb,bombsx[i],bombsy[i],bombsgx,bombsgy);
         if(bombsx[i]+bombsgx-10>x&&bombsx[i]+10<x+gx){
             if(bombsy[i]+bombsgy-10>y&&bombsy[i]+10<y+gy){
