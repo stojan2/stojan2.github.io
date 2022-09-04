@@ -119,7 +119,7 @@ function test(event){
 }
 
 function update() {
-    //document.getElementById("myAudio").play();
+    document.getElementById("myAudio").play();
     gameDraw.drawImage(hintegrundBild,0,0,1980,1080);
 
     if(playingB==1)playing();
