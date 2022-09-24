@@ -1,0 +1,195 @@
+body{
+    margin-left: 0;
+    width: 100vw;
+    background-color: white;
+}
+
+#menu{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    box-sizing: 10;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+#menu_text_menu{
+    font-size: 2.5vw;
+    border-color: black ;
+    box-sizing: 10;
+    border-style: solid;
+    width: 6.2vw;
+}
+
+#uberschrift{
+    text-align: center;
+    color: black;
+    font-size: 2vw;
+    box-sizing: 10;
+    border-bottom: 10;
+    border-color: black;
+   /* filter: blur(1px);*/
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-image: url("bilder/fon1.jpg");
+}
+
+#am_bestellen_knopf{
+    margin-bottom: -4vw;
+    width: 40%;
+    height: 3vw;
+}
+
+#am_bestellen_knopf_text{
+    font-size: 1.5vw;
+    margin-left: 5%;
+}
+
+#nummer{
+    margin-left: 10vw;
+    font-size: 1.5vw;
+}
+
+#seite{
+    background-color: white;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 10vh;
+}
+
+#hintergrundBild1{
+    background-image: url("bilder/background.jpg");
+    background-size: 100%;
+}
+
+#links{
+    font-size: 1vw;
+    margin-left: 0;
+    margin-right: 20vw;
+    margin-top: 30vw;
+    margin-bottom: -134.5vw;
+}
+
+#rechts{
+    font-size: 1vw;
+    margin-left: 80vw;
+    margin-right: 0;
+    margin-top: 30vw;
+    margin-bottom: -134.5vw;
+}
+#links_produkt{
+    font-size: 1vw;
+    margin-left: 0;
+    margin-right: 20vw;
+    margin-top: 10vw;
+    margin-bottom: -114.5vw;
+}
+
+#rechts_produkt{
+    font-size: 1vw;
+    margin-left: 80vw;
+    margin-right: 0;
+    margin-top: 10vw;
+    margin-bottom: -114.5vw;
+}
+
+#links_bild{
+    border-style: solid;
+    box-sizing: 10;
+    border-color: black;    
+    width: 20vw;
+    height: 100vw;
+}
+#rechts_bild{
+    border-style: solid;
+    box-sizing: 10;
+    border-color: black;
+    width: 20vw;
+    height: 100vw;
+}
+
+#rechtsWerbung{
+    width: 20vw;
+}
+
+a{
+    color: black;
+}
+
+#info{
+    font-size: 1vw;
+    margin-left: -20vw;
+    margin-right: -20vw;
+    margin-top: 5vw;
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+#infoText{
+    text-align: center;
+}
+
+#bestell_knopf{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    width: 30vw;
+    height: 8vw;
+    margin-bottom: -10vw;
+
+}
+
+#bestell_knopf_text{
+    font-size: 4vw;
+    text-align: center;
+}
+
+#produkt{
+    margin-left: 10vw;
+    width: 40vw;
+    height: 40vw;
+    border-style: solid;
+    box-sizing: 10;
+    border-color: black;
+}
+
+#produktText{
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 10vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-style: solid;
+    box-sizing: 10;
+    border-color: black;
+}
+
+#produktInfoText{
+    font-size: 1vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+
+#kontakts{
+    margin-top: 5vw;
+    margin-left: 10vw;
+}
+
+#kontact_icon{
+    transform: translateY(1vw);
+    width: 3vw;
+    height: 3vw;
+}
+
+#entwickler{
+    text-align: center;
+}
+
+#prikol{
+    margin-top: 1;
+    margin-bottom: 1;
+    width: 100%;
+    height: 100%;
+}
