@@ -60,13 +60,13 @@ body {
 
 
 #icons{
-    width: 3vw;
-    height: 3vw;
+    width: 3vh;
+    height: 3vh;
 }
 
 #ava{
     transform: translate(0,1vw);
-    margin-top: 2vw;
-    width: 3vw;
-    height: 3vw;
+    margin-top: 2vh;
+    width: 3vh;
+    height: 3vh;
 }
