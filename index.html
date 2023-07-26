@@ -1,107 +1,81 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Decision</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<html lang="ru">
+  
+  <head>
+    <title>Меню</title>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
 
 
-    <body onload="check()">
-        
-        <script src="script.js"></script>
-        <h1>
-            Decision
-        </h1><br>
+  <body>
+    <img src="src/loading background.PNG"  id="preloaderBackground">
+    <img src="src/Loading.gif" id="preloader" >
+    <h1 id="preloaderText">загрузка</h1>
+    </img>
 
+    
+    <center>
+      <div id="mainBackground"></div>
+        <h1 id="mainText">
+          <br>
+          🎮Gaming & Programming club💻
+          <br>
+          <br>
+        </h1>
+    </center>
+
+    <div id="projects">
+      <br>
+      <div id="inProjects">
+        <div id="projectIconLeft">
+          <a href="TDP4 site.html">
+            <img id="projectIconImage" src="src/project icons/TDP4.jpg">
+            <center><h2 id="projectMainText">
+              ProjectX<br>
+            </h2></center>
+            <h4 id="projectText">
+              Эта игра в разработке.
+            </h4>
+          </a>
+        </div>
+        <div id="projectIconRight">
+          <a href="">
+            <img id="projectIconImage" src="src/project icons/Decision.jpg">
+            <center><h2 id="projectMainText">
+              Decision<br>
+            </h2></center>
+            <h4 id="projectText">
+              Этот проект временно заброжен.
+            </h4>
+          </a>
+        </div>
+        <div id="projectIconLeft">
+          <a href="https://stojan2.github.io/patner%20ship%20site/">
+            <img id="projectIconImage" src="src/project icons/partner ship bot.png">
+            <center><h2 id="projectMainText">
+              Auto Partnership<br>
+            </h2></center>
+            <h4 id="projectText">
+              Наш пиар бот Auto Partnership. Этот бот предназначен для рекламы своего сервера в дискорде.
+            </h4>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="contacts">
+      <center>
         <h2>
-            Привет,я Стоян,я создаю игры, сейчас погружён <br>
-            только в один проект "Decision". На данный момент<br>
-            проект нуждается в помощи. Всех желающих помочь<br>
-            созданию игры,приглашаю на свой дискорд сервер<br>
-            <a href="https://discord.gg/4vDbbw6YFr">(нажав здесь)</a>. При находке багов и каких-либо<br>
-            либо неполадок так же обращайтесь к администрации<br>
-            на сервере.<br><br><br>
-            
-
-            Теперь о самой игре "Decision". Decision— онлайн игра<br>
-            под телефон и компьютеры, где вы можете играть вместе<br>
-            со своими друзьями. В этой игре вы сами должны придумать<br>
-            свой путь или же найти его.<br>
-            (не спойлерить себе про игру)<br><br><br>
-
-
-            тут все имена людей которые мне помогли в моем проекте:<br>
-            <div id="names">
-                Вадим<br>
-                Максим<br>
-                Киджик<br>
-                Димон<br>
-                Боня<br>
-                Белка<br>
-            </div>
-            Спасибо вам.<br><br><br>
-
-            1 картинка
-            <img src="bilder/bild1.PNG" width="100%">
-            2 картинка
-            <img src="bilder/bild2.PNG" width="100%">
+          <br>
+          Соцсети:
         </h2>
+        <a href="https://discord.gg/PukNR8Dxu3"><img id="contactIcons" src="src/discord.png"></a>
+        <a href="https://www.youtube.com/@Ads-reviews-of-miscellaneous/playlists"><img id="contactIcons" src="src/youtube.png"></a>
+      </center>
+    </div>
 
+    <script src="src/script.js"></script>
 
-        <div id="pc">
-            <a href="https://drive.google.com/u/0/uc?id=1Zn-aWNxZ89aHoX4ua5RemWqtdMYh37w9&export=download&confirm=t&uuid=431dcc92-39a6-4b8b-a998-ee4468de6cb3" download="my-app">
-               <img src="bilder/R.png" alt="downloadButton" width="30%" id="windowsDownloadButton">
-               <h1 id="windowsDownloadText">
-                    Скачать для Windows 64bit
-               </h1>
-            </a>
-
-            
-            <a href="https://drive.google.com/u/0/uc?id=1_0IU1fUgIZvaXazxBaahz9kGe9k0iF_R&export=download&confirm=t&uuid=c28d682a-859b-4ef2-9d1d-ca31e7b56942" download="my-app">
-                <img src="bilder/R.png" alt="downloadButton" width="30%" id="windowsDownloadButton">
-                <h1 id="windowsDownloadText">
-                    Скачать для Windows 32bit
-                </h1>
-            </a>
-        </div>
-        
-        
-        <div id="android">
-            <a href="https://drive.google.com/u/0/uc?id=1SSTHw5mmyVsG2NL5iaABL3iAbS0UGM_X&export=download&confirm=t&uuid=b79f79cf-413d-4202-8ec4-9ed47c7342d2" download="my-app">
-                <img src="bilder/R.png" alt="downloadButton" width="30%" id="windowsDownloadButton">
-                <h1 id="windowsDownloadText">
-                    Скачать для Android
-                </h1>
-            </a>
-        </div>
-        <h1></h1>
-
-
-        <div id="noHave">
-            <h1 id="windowsDownloadText">
-                Эта игра только под Windows и Android
-            </h1>
-        </div>
-
-        <br>
-        <div id="contacts">
-            <h3 id="contactsText">
-                <br>
-                <br>
-                контакты:
-            </h3>
-            <a href="https://discord.gg/4vDbbw6YFr" target="_blank">
-                <img src="bilder/discord.png" width="5%" id="discord">
-                <br>Discord server
-            </a>
-            <br>
-            stojan#5466
-            <br>
-            <br>
-            <br>
-        </div>
-    </body>
+  </body>
 </html>
