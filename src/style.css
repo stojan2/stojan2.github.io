@@ -86,11 +86,11 @@ body{
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 50%;
-    width: 30%;
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-top: 12.5%;
+    height: 20vw;
+    width: 20vw;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    margin-top: 30vh;
     margin-bottom: 12.5%;
     position: fixed;
     z-index: 2;
