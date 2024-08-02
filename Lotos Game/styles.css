@@ -28,8 +28,16 @@
     margin-top: 5vw;
 }
 
+#InDevelopingProject{
+    color: gray;
+    text-align: right;
+    margin-right: 5%;
+}
 #InDeveloping{
     color: gray;
+    text-align: right;
+    margin-top: 3vw;
+    margin-right: 5%;
 }
 
 #Sot{
