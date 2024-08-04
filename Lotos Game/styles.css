@@ -47,7 +47,7 @@
     margin-right: 5%;
 }
 
-#Sot{
+.Sot{
     margin: auto;
     height: max-content;
     border-radius: 1vw;
@@ -242,7 +242,7 @@ br{
         margin-bottom: -75%;
     }
 
-    #Sot{
+    .Sot{
         width: 96vw;
         align-self: center;
         align-content: center;
