@@ -1,15 +1,33 @@
 
-.LEngine{
+#LEngine{
     background-image: url("src/fon3.png");
 }
-.Infinity{
+#Infinity{
     background-image: url("src/fon3.png");
 }
-.Lotos_Game{
+#Lotos_Game{
     background-image: url("src/fon3.png");
 }
 
-#Main_Background{
+.Languages{
+    align-content: center;
+    width: 80vw;
+    background-color: rgb(51, 51, 51);
+    border-radius: 1vw;
+}
+.Language_Text{
+    font-size: 3vw;
+    color: blueviolet;
+    margin-bottom: 0vw;
+}
+.Language_Icon{
+    width: 8vw;
+    margin: 1vw;
+    border-radius: 1vw;
+}
+
+.Main_Background{
+    background-color: black;
     margin: auto;
     margin-top: 1vw;
     width: 100%;
@@ -20,11 +38,11 @@
     margin-bottom: -40vw;
 }
 
-#Background{
+.Background{
     background-color: rgb(8, 8, 8);
     border-radius: 1vw;
 }
-#Body{
+.Body{
     margin: auto;
     height: max-content;
     border-radius: 1vw;
@@ -35,12 +53,12 @@
     margin-top: 5vw;
 }
 
-#InDevelopingProject{
+.InDevelopingProject{
     color: gray;
     text-align: right;
     margin-right: 5%;
 }
-#InDeveloping{
+.InDeveloping{
     color: gray;
     text-align: right;
     margin-top: 3vw;
@@ -59,14 +77,14 @@
     margin-top: 5vw;
 }
 
-#SotIcon{
+.SotIcon{
     width: 4vw;
     height: 4vw;
     margin-top: -2vw;
     margin-bottom: 1vw;
 }
 
-#Projects{
+.Projects{
     margin: auto;
     height: max-content;
     width: 76vw;
@@ -76,7 +94,7 @@
     align-content: start;
     gap: 4vw;
 }
-#Project{
+.Project{
     border-radius: 1vw;
     background-color: rgb(31, 31, 31);
     margin: auto;
@@ -87,7 +105,7 @@
     grid-template-columns: repeat(2,1fr);
     align-content: start;
 }
-#Project_Icon{
+.Project_Icon{
     border-radius: 1vw;
     margin: 1vw;
     width: 15vw;
@@ -119,11 +137,11 @@ a{
     color: rgba(0, 0, 0, 0)
 }
 
-#Project_Main{
+.Project_Main{
     color: rgb(212, 0, 0);
     font-size: 1.5vw;
 }
-#Project_Text{
+.Project_Text{
     color: rgb(204, 204, 204);
     font-size: 1.2vw;
     width: 15vw;
@@ -132,7 +150,7 @@ a{
 br{
     font-size: 2vw;
 }
-#Main_Text{
+.Main_Text{
 
 
     margin: auto;
@@ -146,10 +164,10 @@ br{
     align-content: center;
 }
 
-#Under_Main_Text{
+.Under_Main_Text{
     font-size: 3vw;
 
-    color: rgb(166, 0, 255);
+    color: blueviolet;
     background-color: rgb(51, 51, 51);
     border-radius: 1vw;
     height: 7vw;
@@ -157,20 +175,20 @@ br{
 }
 
 @media (max-width: 100vh){
-    .LEngine{
+    #LEngine{
         background-image: url("src/project icons/Lengine.png");
     }
-    .Infinity{
+    #Infinity{
         background-image: url("src/project icons/infinity.png");
     }
-    .Lotos_Game{
+    #Lotos_Game{
         background-image: url("src/project icons/Lotos_Game.png");
     }
-    #Main_Text{
+    .Main_Text{
         width: 96vw;
         height: 11vh;
     }
-    #Under_Main_Text{
+    .Under_Main_Text{
         display: none;
         margin: none;
     }
@@ -188,10 +206,10 @@ br{
     br{
         font-size: 3vh;
     }
-    #Body{
+    .Body{
         width: 100%;
     }
-    #Projects{
+    .Projects{
         margin: auto;
         height: max-content;
         width: 96vw;
@@ -202,7 +220,7 @@ br{
         gap: 1vw;
     }
 
-    #Project_Icon{
+    .Project_Icon{
         border-radius: 1vw;
         margin: 1vw;
         width: 38vw;
@@ -210,7 +228,7 @@ br{
         margin-bottom: -15vw;
     }    
 
-    #Project{
+    .Project{
         border-radius: 1vw;
         background-color: rgb(31, 31, 31);
         margin: auto;
@@ -221,17 +239,17 @@ br{
         grid-template-columns: repeat(2,1fr);
         align-content: start;
     }
-    #Project_Main{
+    .Project_Main{
         color: rgb(212, 0, 0);
         font-size: 4.5vw;
     }
-    #Project_Text{
+    .Project_Text{
         color: rgb(204, 204, 204);
         font-size: 3.5vw;
         width: 50vw;
     }
 
-    #Main_Background{
+    .Main_Background{
         margin: 0;
         width: 100%;
         background-size: 75%;
@@ -247,11 +265,22 @@ br{
         align-self: center;
         align-content: center;
     }
-    #SotIcon{
+    .SotIcon{
         width: 5vh;
         height: 5vh;
         margin-top: -1vh;
         margin-bottom: 1vh;
+    }
+
+    .Language_Icon{
+        width: 8vh;
+        margin: 1vw;
+        border-radius: 1vw;
+    }
+    .Language_Text{
+        font-size: 3vh;
+        color: blueviolet;
+        margin-bottom: 0vw;
     }
     
 }
